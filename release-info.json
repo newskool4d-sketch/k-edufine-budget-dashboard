@@ -1,10 +1,10 @@
 {
   "app_id": "k-edufine-budget-dashboard",
-  "version": "10.0.0",
-  "tag": "v10.0.0",
+  "version": "10.0.1",
+  "tag": "v10.0.1",
   "repository": "newskool4d-sketch/k-edufine-budget-dashboard",
-  "asset_name": "2.대시보드_실행.exe",
+  "asset_name": "budget-dashboard.exe",
   "update_protocol": 1,
-  "sha256": "a7a8c9515663c7329e2f554c0bc75e9bb707a8fa3fa330b7f9e278dea5ea3565",
-  "size": 36441071
+  "sha256": "c78d6089092274d4372e679ce9cdbf25bef0dfce86bf03198737944e7fa46329",
+  "size": 36440563
 }

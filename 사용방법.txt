@@ -9,14 +9,14 @@
 예산 집행 현황 대시보드 - 사용 방법
 =============================================
 
-[2026-10-08 v10.0.0 자동 업데이트 지원]
+[2026-10-08 v10.0.1 자동 업데이트 지원]
 
   - 업데이트 지원 EXE는 실행할 때 새 정식 GitHub Release를 확인합니다.
   - '업데이트'를 누르면 파일 검증 → 이전 EXE 백업 → 교체 → 재실행 순으로 처리합니다.
     '나중에' 또는 '확인 건너뛰기'를 누르면 현재 버전으로 계속 작업합니다.
   - 업무 기록·엑셀·기존 HTML·외부 규칙은 덮어쓰지 않습니다. 기존 HTML은 새 EXE로 재생성하세요.
   - 최초 업데이트 지원 EXE는 한 번 수동 교체해야 합니다. 기존 ver9에는 업데이트 기능이 없습니다.
-  - v10.0.0 EXE 빌드와 실제 EXE의 HTML 생성·업데이트 교체·재실행 검증을 완료했습니다.
+  - v10.0.1 EXE 빌드와 실제 EXE의 HTML 생성·업데이트 교체·재실행 검증을 완료했습니다.
     최신 정식 릴리스: https://github.com/newskool4d-sketch/k-edufine-budget-dashboard/releases/latest
   - 향후 배포: APP_VERSION 증가 → 빌드/실물 검증 → prepare_budget_release.py → 정식 Release 게시.
     같은 태그의 파일만 교체하지 말고 새 버전 번호를 사용하세요.
@@ -24,7 +24,7 @@
 
 [2026-10-08 검산 확대 · 저장/복구 · 연말 집행계획]
 
-  적용 대상: v10.0.0 EXE, 현재 Python 생성기와 budget_dashboard.html. 기존 ver9 EXE는 보존했습니다.
+  적용 대상: v10.0.1 EXE, 현재 Python 생성기와 budget_dashboard.html. 기존 ver9 EXE는 보존했습니다.
 
   1. 총괄 현황 → 원본 검산
      예산현액 등 11개 열을 전체 및 목별로 대조합니다. 일치/불일치/미확인을 구분하며,
@@ -119,7 +119,7 @@ isk_config.json 의 "execution_targets_source"에
   Python 실행 예:
     python run_budget_dashboard.py -i "예산현액.xlsx" --no-open
   EXE 명령줄 실행 예:
-    "2.대시보드_실행.exe" -i "예산현액.xlsx" --no-open
+    "budget-dashboard.exe" -i "예산현액.xlsx" --no-open
   실제 기관명·원본 집행자료 기준일을 알고 있을 때만 추가:
     --org "확인한 기관명" --source-as-of YYYY-MM-DD
   날짜를 생략하면 '자료 기준일 미확인'으로 표시됩니다. 생성일을 원본 기준일로
@@ -173,7 +173,7 @@ isk_config.json 의 "execution_targets_source"에
 
   1. 예산현액.xlsx   ← 예산시스템(재정사업관리->예산관리->예산편성->사업관리카드-> 회계연도 선택 ->예산현액(일상경비포함 체크) -> 파일 내려받기) 에서 내려받은 원본 파일(별도 가공 필요 없음)
            ↓
-  2.대시보드_실행.exe 더블클릭
+  budget-dashboard.exe 더블클릭
     → 파일 선택 창: 예산현액.xlsx 선택 (직전 실행 폴더가 기본으로 열립니다)
     → 기관명 입력 (직전 입력값이 기본으로 채워집니다)
     → "이전 시점 파일과 비교하시겠습니까?" 확인 — 예 선택 시 비교할

@@ -1,2 +1,2 @@
-a7a8c9515663c7329e2f554c0bc75e9bb707a8fa3fa330b7f9e278dea5ea3565  2.대시보드_실행.exe
-47d3f8bfe1f0ee2c4cfea6177c6951771062f4d5b864a5cd68f59e3ec51d4bec  예산 대시보드 프로그램 실행 파일 ver10(2026. 10. 8.).zip
+c78d6089092274d4372e679ce9cdbf25bef0dfce86bf03198737944e7fa46329  budget-dashboard.exe
+c56b27e76c0aa260e5ceb75f95b24d62f89c294c51446f7f8d2a92ed706835ed  budget-dashboard-v10.0.1.zip
