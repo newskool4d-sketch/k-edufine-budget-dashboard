@@ -525,6 +525,24 @@ isk_config.json 의 "execution_targets_source"에
                   저장된 .md 는 to_hwpx_com.py 로 HWPX 변환할 수 있습니다.
                   예) python run_budget_dashboard.py -i 예산현액.xlsx \
                         --emit-md 보고서출력 --org "학생교육원"
+    --next-budget 요구서.xlsx
+                  차기연도 본예산 세출예산요구서(당해 본예산·차기 요구액이 함께 있는 파일 1개)로
+                  변동표, 주요 증감 사유 점검·표현 수정 제안, 시의회 예상질의 목록(질문과 근거만)을
+                  HTML·MD·TXT로 만듭니다. 비교 기준은 당해 본예산 편성액 ↔ 차기 요구액(조정액 열 미사용).
+                  HTML 위쪽 [범위]·[형식] 선택 후 [복사] 또는 [파일로 저장]으로 전체·변동표·사유 점검·
+                  예상질의·설명서 대조를 텍스트(□·○·- 기호, 표는 탭 구분 — 한글·엑셀 붙여넣기용)나
+                  Markdown으로 옮길 수 있습니다.
+    --project-desc 설명서.hwpx
+                  --next-budget 과 함께: 세부사업설명서의 '주요증감사유'를 요구서와 줄 단위로 대조(여러 번 지정 가능).
+                  예) python run_budget_dashboard.py --next-budget 세출예산요구서.xlsx \
+                        --project-desc 세부사업설명서.hwpx --org "학생교육원" -o 본예산_변동분석.html
+                  -i 예산현액.xlsx 를 함께 주면 원래 대시보드(집행 분석·잔여 예산·보고서)도 그대로 만들고,
+                  본예산 변동 분석은 대시보드와 같은 폴더에 '본예산_변동분석_날짜.html'로 만들며 서로 링크합니다.
+                  이때 -o 는 대시보드 경로입니다.
+                  예) python run_budget_dashboard.py -i 예산현액.xlsx -o budget_dashboard.html \
+                        --next-budget 세출예산요구서.xlsx --project-desc 세부사업설명서.hwpx
+                  표현 규칙·질의 규칙은 reference/budget_yoy_rules.json(선택)으로 바꿀 수 있습니다
+                  (wording·questions 목록을 통째로 교체, 형식은 budget_yoy.py 의 DEFAULT_RULES).
 
 [예산편성 기준(budget_rules.json) 관리]
 
