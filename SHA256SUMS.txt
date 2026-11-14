@@ -1,3 +1,2 @@
-77041c8de41842e1874a5ce18a6cb90ebd98b527cd7d91d372927a936d9d34a2  budget-dashboard.exe
-4c55a2bcba8c2f82224056dfe8c1ad793eee0bac2b1005fdc2002fb7fc3a79cc  budget-dashboard-v10.2.0.zip
-914710289ff25dcc16f4e7fb8b65312fbac160f8e558e7771c0f55356cd160b5  budget-dashboard-v10.2.0-guide.html
+3dc65bb821cc8612260b54f5fdc75c43d00c9323482254c61fe726e415aa88fa  budget-dashboard.exe
+16b750ed2d2134a83916594dd56ff7c4f9903316725cb4d442b4b4caa2e797db  budget-dashboard-v10.2.1.zip
